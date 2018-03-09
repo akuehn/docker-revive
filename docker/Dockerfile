@@ -29,7 +29,7 @@ RUN chmod +x /usr/local/bin/entrypoint.sh
 RUN rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /var/www/html
-RUN curl -L https://download.revive-adserver.com/revive-adserver-4.1.1.tar.gz | tar -zx -C /var/www/html/ --strip-components=1
+RUN curl -L https://download.revive-adserver.com/revive-adserver-4.1.3.tar.gz | tar -zx -C /var/www/html/ --strip-components=1
 
 RUN find /var/www/html/var -type d -exec chmod 700 {} +
 RUN find /var/www/html/var -type f -exec chmod 600 {} +
